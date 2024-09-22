@@ -36,7 +36,7 @@ def train_model():
     df = pd.read_csv('data_daily (1).csv', parse_dates=['# Date'])
     df.set_index('# Date', inplace=True)
     # Resample daily data to monthly and sum receipt counts
-    monthly_receipts = df.resample('ME')['Receipt_Count'].sum().values
+    monthly_receipts = df.resample('M')['Receipt_Count'].sum().values
 
     print(f"Monthly receipts range: {monthly_receipts.min()} to {monthly_receipts.max()}")
     
