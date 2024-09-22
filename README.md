@@ -8,6 +8,11 @@ This application predicts future receipt counts based on historical data using a
 - pip (Python package manager)
 - Docker 
 
+
+## Docker Video Setup
+https://loom.com/share/cfe3a31974b74efbb44cb5f19504d38e?src=composer
+
+
 ## Setup
 
 1. Clone the repository: git clone https://github.com/Zaltster/fetch.git
@@ -39,7 +44,7 @@ NOTE: make sure that you are using the net sum amount for each month, the Monthl
 
 To run the application in a Docker container:
 
-1. Build the Docker image: docker build -t receipt-predictor .
+1. Build the Docker image (After entering root directory): docker build -t receipt-predictor .
 
 2. Run the Docker container: docker run -p 5000:5000 receipt-predictor
 
